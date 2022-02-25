@@ -1,0 +1,86 @@
+#generally-info{
+    border: 1px solid rgb(231, 228, 228);
+
+    
+}
+.gi-box{ 
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gi-box-programming{
+    /* border: 1px solid red; */
+    display: flex;
+}
+.gi-box-programming h1{
+    border-right: 1px solid rgb(231, 228, 228);
+    margin: 0;
+    padding: 20px;
+    
+}
+.gi-box-programming h1 span{
+    font-weight: 100;
+}
+.gi-box-programming ul{
+    display: flex;
+}
+.gi-box-programming ul li{
+    border-right: 1px solid rgb(231, 228, 228);
+    padding: 25px 20px;
+    
+    
+
+}
+.gi-box-programming ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+
+}
+.web-design{
+    border-bottom: 4px solid #4bb92f;
+
+}
+.web-design a:hover{
+    color: #4bb92f;
+    transition: all ease .5s;
+}
+.js{
+    border-bottom: 4px solid #ff8700;
+} 
+.js a:hover{
+    color: #ff8700;
+    transition: all ease .5s;
+}
+.css{
+    border-bottom: 4px solid #0078ff;
+    
+}
+.css a:hover{
+    color: #0078ff;
+}   
+.jquery{
+    border-bottom: 4px solid #8d00ff;
+}
+.jquery a:hover{
+    color: #8d00ff;
+    transition: all ease .5s;
+}
+.gi-box-programming > span{
+    border-bottom: 1px solid darkgrey;
+    
+}
+.gi-box-search{
+    /* border: 1px solid red; */
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.gi-box-search i{  
+   cursor: pointer;
+}
