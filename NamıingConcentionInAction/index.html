@@ -11,16 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- section 1 generally info -->
     <!-- gi=generally-info -->
     <section id="generally-info">
-        <div class="gi-box">
-            <div class="gi-box-programming">
-                <h1><span>WEB</span>MAG</h1>
-                <ul>
+        <div class="gi-box container flex justify-content-space-between">
+            <div class="gi-box-programming flex">
+                <h1 class="padding-4x"><span>WEB</span>MAG</h1>
+                <ul class="flex">
                     <li>
                         <a href="">News</a>
                     </li>
@@ -41,12 +47,104 @@
                     </li>
                 </ul>
             </div>
-            <div class="gi-box-search">
+            <div class="gi-box-search flex justify-content-space-between align-items-center">
                 <i class="fas fa-align-justify"></i>
                 <i class="fas fa-search"></i>
             </div>
         </div>
 
+    </section>
+    <!-- section 2 container -->
+    <section id="container" class="flex justify-content-center align-items-center margin-top-8x">
+        <div class="container-img container flex justify-content-space-between">
+            <div class="ci-js position-relative ">
+                <div class="ci-js-link position-absolute  bottom left">
+                    <a href="" class="white btn-color-1 font-size-btn padding-btn margin-right-3x">JAVASCRIPT</a>
+                    <span class="white">March 27,2018</span>
+                    <h1 class="margin-top-2x">
+                        <a href="" class="white font-size-2x">Chorme Extension Protects Against JavaScript-Based CPU
+                            Side-Channel Attacks</a>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="ci-jquery position-relative">
+                <div class="ci-jquery-link  position-absolute  bottom left">
+                    <a href="" class="white btn-color-2 font-size-btn padding-btn margin-right-3x">JQUERY</a>
+                    <span class="white">March 27,2018</span>
+                    <h1 class="margin-top-2x">
+                        <a href="" class="white font-size-2x">Ask HN:Does Anybody Still Use JQuery?</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 resent post -->
+    <section id="resent-post">
+        <h1 class="container padding-5x font-size-3x font-weight-700">Recent Posts</h1>
+        <div class="container rp-grid">           
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/3.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-3 font-size-btn padding-btn margin-right-3x btn-radius">WEB DESIGN</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a>
+                </h1>
+            </div>
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/4.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-1 font-size-btn padding-btn margin-right-3x btn-radius">JAVASCRIPT</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a>
+                </h1>
+
+            </div>
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/5.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-2 font-size-btn padding-btn margin-right-3x btn-radius">JQUERY</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">Ask HN: Does Anybody Still Use JQuery?</a>
+                </h1>
+            </div>
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/6.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-1 font-size-btn padding-btn margin-right-3x btn-radius">JAVASCRIPT</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">Why Node.js Is The Coolest Kid On The Backend Development Block!</a>
+                </h1>
+            </div>
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/7.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-4 font-size-btn padding-btn margin-right-3x btn-radius">CSS</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">CSS Float: A Tutorial</a>
+                </h1>
+            </div>
+            <div class="rp-grid-items">
+                <div class="rp-grid-img">
+                    <img src="/ımg/8.jpg" alt="">
+                </div>
+                <a href="" class="white btn-color-3 font-size-btn padding-btn margin-right-3x btn-radius">WEB DESIGN</a>
+                <span>March 27,2018</span>
+                <h1 class="margin-top-2x">
+                    <a href="" class="font-size-2x">CSS Float: A Tutorial</a>
+                </h1>
+            </div>
+        </div>
     </section>
 </body>
 
