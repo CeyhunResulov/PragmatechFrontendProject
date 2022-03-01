@@ -233,19 +233,12 @@
 
 /* footbar */
 #foot-bar{
-    border: 1px solid red;
-    height: 400px;
-    
+    height: 350px
 }
 .c-foot-bar{
-    border: 1px solid red;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.c-foot-bar div{
-   border: 1px solid red;
+.c-foot-bar>div{
    height: 200px; 
 }
 .c-foot-bar a{
@@ -254,4 +247,31 @@
 .webmag p{
     color: #a7b3c6;
 }
-
+.email-box{
+    width:262px;
+    height: 40px;
+    left: 0px;
+}
+.input{
+    border:1px solid #a7b3c6;
+    color: #a7b3c6;
+    width: 240px;
+    height: 35px;
+    font-size: 15px;
+}
+.sosial{
+    width: 60%;
+}
+.sosial li{
+    background-color: #a7b3c6;
+    border-radius: 1px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.sosial li a i{
+    color: white;
+}

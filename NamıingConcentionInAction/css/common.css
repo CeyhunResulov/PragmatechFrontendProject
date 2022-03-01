@@ -13,6 +13,9 @@ span{
 .block{
     display: block;
 }
+.pointer{
+    cursor: pointer;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -50,6 +53,12 @@ span{
 .bottom{
     bottom: 20px;
 }
+.left-5{
+    left: 5px;
+}
+.left-10{
+    left: 10px;
+}
 .left-x{
     left: 15px;
 }
@@ -61,6 +70,15 @@ span{
 }
 .left-4x{
     left: 350px;
+}
+.left-5{
+    right: 5px;
+}
+.right-5{
+    right: 5px;
+}
+.top-10{
+    top: 10px;
 }
 .white{
     color: #fff;
