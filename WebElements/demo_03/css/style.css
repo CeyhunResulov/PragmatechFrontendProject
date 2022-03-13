@@ -88,7 +88,6 @@ a {
 }
 
 #demo-3 {
-  border: solid red 1px;
   height: 800px;
 }
 
@@ -106,9 +105,8 @@ a {
 }
 
 #demo-3 .container {
-  border: 1px solid red;
   height: 80%;
-  width: 1200px;
+  width: 1100px;
   margin: 4em auto;
 }
 
@@ -122,19 +120,20 @@ a {
 }
 
 #demo-3 .card {
-  border: 1px solid red;
   width: 100%;
   height: 340px;
   margin-top: 100px;
 }
 
 #demo-3 .card .item {
-  border: 1px solid red;
-  width: 400px;
+  width: 366.66667px;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0 15px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 #demo-3 .card .item h1 {
@@ -159,4 +158,51 @@ a {
   padding: 15px 40px;
   border-radius: 25px;
   color: white;
+}
+
+@-webkit-keyframes border {
+  0% {
+    border-bottom: 2px solid #24cf5f;
+  }
+  33% {
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+  66% {
+    border-top: 2px solid #24cf5f;
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+  100% {
+    border-right: 2px solid #24cf5f;
+    border-top: 2px solid #24cf5f;
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+}
+
+@keyframes border {
+  0% {
+    border-bottom: 2px solid #24cf5f;
+  }
+  33% {
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+  66% {
+    border-top: 2px solid #24cf5f;
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+  100% {
+    border-right: 2px solid #24cf5f;
+    border-top: 2px solid #24cf5f;
+    border-bottom: 2px solid #24cf5f;
+    border-left: 2px solid #24cf5f;
+  }
+}
+
+.item:hover {
+  -webkit-animation: border forwards;
+          animation: border forwards;
 }

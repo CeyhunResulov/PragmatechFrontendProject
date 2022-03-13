@@ -2,7 +2,6 @@
 @import "additions/recet";
 @import "additions/common";
 #demo-3{
-    border: solid red 1px;
     height: $section-heigth;
     .title{
         background-color: $main-color;
@@ -15,7 +14,6 @@
         }
     }
     .container{
-        border: 1px solid red;
         height: 80%;
         width: $container-with;
         margin: 4em auto;
@@ -31,18 +29,18 @@
         }
     }
     .card{
-        border:1px solid red;
         @extend .flex;
         @extend .justify-content-between;
         width: 100%;
         height: $card-height;
         margin-top: $space-2x*10;
         .item{
-            border: 1px solid red;
             width: $container-with/3;
             height: 100%;
-            padding: $space-2x;
+            padding: $space-4x;
             box-sizing: border-box;
+            margin: 0 $space-3x;
+            animation-duration: 1s;
             @extend .flex;
             @extend .flex-direction-column;
             @extend .justify-content-between;
@@ -74,4 +72,27 @@
 
         
     }
+}
+@keyframes border{
+    0%{
+        border-bottom: 2px solid $main-color;
+    }
+    33%{
+        border-bottom: 2px solid $main-color;
+        border-left: 2px solid $main-color;
+    }
+    66%{
+        border-top: 2px solid $main-color;
+        border-bottom: 2px solid $main-color;
+        border-left: 2px solid $main-color;
+    }
+    100%{
+        border-right: 2px solid $main-color;
+        border-top: 2px solid $main-color;
+        border-bottom: 2px solid $main-color;
+        border-left: 2px solid $main-color;
+    }
+}
+.item:hover{
+    animation: border forwards;
 }
