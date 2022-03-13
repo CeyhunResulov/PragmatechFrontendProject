@@ -1,0 +1,77 @@
+@import "additions/variable";
+@import "additions/recet";
+@import "additions/common";
+#demo-3{
+    border: solid red 1px;
+    height: $section-heigth;
+    .title{
+        background-color: $main-color;
+        padding: $space-2x;
+        box-sizing: border-box;
+        h1{
+            text-align: center;
+            color: white;
+            font-size: $size-3x+3;
+        }
+    }
+    .container{
+        border: 1px solid red;
+        height: 80%;
+        width: $container-with;
+        margin: 4em auto;
+        .container-heading{
+            @extend .bring-to-center;
+            h1,p{
+                text-align: center;
+            }
+            h1{
+                font-size: $size-6x;
+                font-weight: 700;
+            }
+        }
+    }
+    .card{
+        border:1px solid red;
+        @extend .flex;
+        @extend .justify-content-between;
+        width: 100%;
+        height: $card-height;
+        margin-top: $space-2x*10;
+        .item{
+            border: 1px solid red;
+            width: $container-with/3;
+            height: 100%;
+            padding: $space-2x;
+            box-sizing: border-box;
+            @extend .flex;
+            @extend .flex-direction-column;
+            @extend .justify-content-between;
+            @extend .align-items-center;
+            h1{
+                font-size: $size-6x;
+                font-weight: 700;
+            }
+            .icon{
+                i{
+                    font-size: $size-10x+2;
+                    color: $main-color;
+                }
+            }
+            p{
+                color: darkgray;
+                font-size: $size-3x;
+                padding:0 $space-10x;
+                text-align: center;
+            }
+            a{
+                background-color: $main-color;
+                padding: $space-3x $space-8x;
+                border-radius: 25px;
+                color: white;
+            }
+
+        }
+
+        
+    }
+}
