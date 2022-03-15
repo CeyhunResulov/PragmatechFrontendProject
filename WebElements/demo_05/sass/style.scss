@@ -1,0 +1,83 @@
+@import "addition/variable";
+@import "addition/common";
+@import "addition/recet";
+%flex-center{
+    @extend .flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+}
+#demo-5{
+    height: $section-heigth;
+    .title{
+        background-color: $main-color;
+        h1{
+            text-align: center;
+            color: white;
+        }
+    }
+    .container{
+        width: $container-width;
+        height: $container-height;
+        margin: $space-10x*2 auto;
+        @extend %flex-center;
+        .container-heading{
+            width: 50%;
+            p{
+                color: $font-color-first;
+            }
+        }
+        .card{
+            height: $card-height;
+            width: 100%;
+            @extend .flex;
+            @extend .justify-content-between;
+            .item{
+                position: relative;
+                background-color: $secondary-color;
+                @extend  .mx-20;
+                @extend  .py-20;
+                @extend %flex-center;
+                justify-content: space-around;
+                outline: 1px solid $border-color;
+                outline-offset: -9px;
+                box-shadow: 0 0 0 18px rgba(0,0,0,0.15) inset;
+                transition: all linear .4s;
+                .icon{
+                    @extend .size-52;
+                    color:$icon-color
+                }
+                h1{
+                    @extend .size-30;
+                    @extend .fw-7;
+                    color: white
+                }
+                p{
+                    @extend .size-14;
+                    @extend .px-35;
+                    @extend .center;
+                    color:white;
+                    line-height: $size-5x;
+                    
+                }
+                a{
+                    background-color: $main-color;
+                    color: white;
+                    padding: $space-4x $space-8x;
+                    transition: all ease .2s;
+                    @extend .size-14;
+                    @extend .fw-4
+                }
+                &:hover{
+                    outline: 5px solid $border-color;
+                    box-shadow: 0 0 0 300px rgba(0,0,0,0.15) inset;
+                    a{
+                        background-color: $icon-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
