@@ -1,0 +1,118 @@
+@import "addition/variable";
+@import "addition/common";
+@import "addition/recet";
+%flex-center{
+    @extend .flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+}
+%flex-odd-center{
+    @extend .flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+#demo-8{
+    height: $section-heigth;
+    background-color: $secondary-color;
+    .title{
+        background-color: $main-color;
+        h1{
+            text-align: center;
+            color: white;
+        }
+    }
+    .container{
+        width: $container-width;
+        height: $container-height;
+        margin: $space-10x*2 auto;
+        @extend %flex-center;
+        .container-heading{
+            width: 50%;
+            p{
+                color: $font-color-first;
+            }
+        }
+        .card{
+            height: $card-height;
+            width: 100%;
+            @extend .flex;
+            @extend .justify-content-between;
+            .item{
+                background-color: white;
+                width: $item-with;
+                height: $item-height;
+                position: relative;
+                box-sizing: border-box;
+                padding: $space-5x $space-x/2;
+                @extend %flex-center;  
+                transition: all linear .5s;       
+                .work{
+                    position: relative;
+                    background-color: $secondary-color;
+                    width: 100%;
+                    height: $size-10x+5;
+                    background: linear-gradient(to right,$secondary-color 100%,$main-color 100%);
+                    background-position: left;
+                    background-size: 200% 100%;
+                    transition: background-position 1s;
+                    h1{
+                        color: black;
+                        @extend .size-27;
+                        @extend .fw-7;
+                        position: absolute;
+                        z-index: 5;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        transition: all linear .2s;
+                    }
+                } 
+                &:hover{
+                    .work{
+                        background: linear-gradient(to right,$secondary-color 0%,$main-color 0%);
+                    }
+                    h1{
+                        color: white;
+                    }
+                }
+                .icon{
+                    width: $size-2x*13;
+                    height: $size-2x*13;
+                    @extend %flex-odd-center;
+                    border: 1px solid $border-color;
+                    border-radius: 50%;
+                    i{
+                        color: $main-color;
+                        @extend .size-52
+                    }
+                }
+                &:hover{
+                    .icon{
+                        right: $space-15x*2;
+                    }
+                }
+                p{
+                    @extend .size-14;
+                    @extend .px-25;
+                    @extend .center;
+                    @extend .mt-10;
+                    color: $font-color-first;
+                    line-height: $size-5x;
+                        
+                }
+                a{
+                    background-color: $main-color;
+                    color: white;
+                    padding: $space-3x $space-8x;
+                    transition: all ease .2s;
+                    @extend .size-14;
+                    @extend .fw-4;
+                    @extend .b-rad-40
+                }
+            }
+        }
+    }
+}
+
+
