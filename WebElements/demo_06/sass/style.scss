@@ -33,6 +33,7 @@
             @extend .flex;
             @extend .justify-content-between;
             .item{
+                background-color: red;
                 position: relative;
                 @extend  .mx-20;
                 @extend  .py-20;

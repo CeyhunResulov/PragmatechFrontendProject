@@ -1169,6 +1169,7 @@ a {
 }
 
 #demo-6 .container .card .item {
+  background-color: red;
   position: relative;
   -ms-flex-pack: distribute;
       justify-content: space-around;
