@@ -7,6 +7,11 @@
     @extend .justify-content-between;
     @extend .align-items-center;
 }
+%flex-odd-center{
+    @extend .flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
 #demo-6{
     height: $section-heigth;
     .title{
@@ -33,48 +38,75 @@
             @extend .flex;
             @extend .justify-content-between;
             .item{
-                background-color: red;
+                width: $item-height;
+                height: $item-height;
                 position: relative;
-                @extend  .mx-20;
-                @extend  .py-20;
-                @extend %flex-center;
-                justify-content: space-around;
-                outline: 1px solid $border-color;
-                outline-offset: -9px;
-                box-shadow: 0 0 0 18px rgba(0,0,0,0.15) inset;
-                transition: all linear .4s;
-                .icon{
-                    width: 52px;
-                    height: 52px;
-                    @extend .size-52;
-                    background-color: $main-color;
-                    color: black
-                }
-                h1{
-                    @extend .size-30;
-                    @extend .fw-7;
-                }
-                p{
-                    @extend .size-14;
-                    @extend .px-35;
-                    @extend .center;
-                    color:white;
-                    line-height: $size-5x;
-                    
-                }
-                a{
-                    background-color: $main-color;
-                    color: white;
-                    padding: $space-4x $space-8x;
-                    transition: all ease .2s;
-                    @extend .size-14;
-                    @extend .fw-4
+                .item-top{
+                    position: absolute;
+                    top: $space-6x;
+                    right: $space-5x;
+                    top: $space-7x;
+                    z-index: -1;
+                    transition: all ease .5s;
+                    h1{
+                        @extend .size-72;
+                        color: $secondary-color;
+                    }
                 }
                 &:hover{
-                    outline: 5px solid $border-color;
-                    box-shadow: 0 0 0 300px rgba(0,0,0,0.15) inset;
+                    .item-top{
+                        top: $space-2x;
+                    }
+                    .item-bottom{
+                        .icon{
+                            transform: rotateY(180deg);
+                        }
+                    }
+                }
+                .item-bottom{
+                    border-top: 1px solid $main-color;
+                    background-color: white;
+                    @extend  .py-20;
+                    @extend %flex-center;
+                    justify-content: space-around;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 340px;
+                    height: 340px;
+                    .icon{
+                        width: $icon-with;
+                        height: $icon-height;
+                        background-color: $main-color;
+                        @extend %flex-odd-center;
+                        @extend .b-rad-10;
+                        transition: all ease 1s;
+                        i{
+                            color: white;
+                            @extend .size-52;
+                        }
+                    }
+                    h1{
+                        @extend .size-30;
+                        @extend .fw-7;
+                    }
+                    p{
+                        @extend .size-14;
+                        @extend .px-35;
+                        @extend .center;
+                        color: $font-color-first;
+                        line-height: $size-5x;
+                        
+                    }
                     a{
-                        background-color: $icon-color;
+                        background-color: $main-color;
+                        color: white;
+                        padding: $space-3x $space-8x;
+                        transition: all ease .2s;
+                        @extend .size-14;
+                        @extend .fw-4;
+                        @extend .b-rad-40
                     }
                 }
             }
