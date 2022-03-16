@@ -1,0 +1,93 @@
+@import "addition/variable";
+@import "addition/common";
+@import "addition/recet";
+%flex-center{
+    @extend .flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+}
+%flex-odd-center{
+    @extend .flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+#demo-7{
+    height: $section-heigth;
+    .title{
+        background-color: $main-color;
+        h1{
+            text-align: center;
+            color: white;
+        }
+    }
+    .container{
+        width: $container-width;
+        height: $container-height;
+        margin: $space-10x*2 auto;
+        @extend %flex-center;
+        .container-heading{
+            width: 50%;
+            p{
+                color: $font-color-first;
+            }
+        }
+        .card{
+            height: $card-height;
+            width: 100%;
+            @extend .flex;
+            @extend .justify-content-between;
+            .item{
+                width: $item-with;
+                height: $item-height;
+                position: relative;
+                @extend %flex-center;         
+                @extend  .py-20;
+                h1{
+                    color: black;
+                    @extend .mt-40;
+                    @extend .size-30;
+                    @extend .fw-7;
+                }       
+                .icon{
+                    position: absolute;
+                    right: 0;
+                    top: $space-2x;
+                    z-index: -1;
+                    @extend %flex-odd-center;
+                    @extend .b-rad-10;
+                    transition: all ease .5s;
+                    i{
+                        color: $icon-color;
+                        font-size: 130px
+                    }
+                }
+                &:hover{
+                    .icon{
+                        right: $space-15x*2
+                    }
+                }
+                p{
+                    @extend .size-14;
+                    @extend .px-35;
+                    @extend .center;
+                    @extend .mt-10;
+                    color: $font-color-first;
+                    line-height: $size-5x;
+                        
+                }
+                a{
+                    background-color: $main-color;
+                    color: white;
+                    padding: $space-4x $space-8x;
+                    transition: all ease .2s;
+                    @extend .mb-10;
+                    @extend .size-14;
+                    @extend .fw-4;
+                }
+            }
+        }
+    }
+}
+
+
