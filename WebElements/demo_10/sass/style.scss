@@ -1,0 +1,92 @@
+@import "addition/variable";
+@import "addition/common";
+@import "addition/recet";
+%flex-center{
+    @extend .flex;
+    @extend .flex-direction-column;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+}
+%flex-odd-center{
+    @extend .flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+#demo-10{
+    height: $section-heigth;
+    .title{
+        background-color: $main-color;
+        h1{
+            text-align: center;
+            color: white;
+        }
+    }
+    .container{
+        width: $container-width;
+        height: $container-height;
+        margin: $space-10x*2 auto;
+        @extend %flex-center;
+        .container-heading{
+            p{
+                color: $font-color-first;
+                margin-top: $space-2x;
+            }
+        }
+        .card{
+            height: $card-height;
+            width: 100%;
+            @extend .flex;
+            @extend .justify-content-between;
+            .item{
+                background-color: $main-color;
+                width: $item-with;
+                height: $item-height;
+                position: relative;
+                box-sizing: border-box;
+                padding: $space-5x $space-x/3;
+                border: 1px solid $main-color;
+                border-radius: $radius-8x 0;
+                @extend %flex-center;  
+                transition: all ease .5s;    
+                h1{
+                    color: white;
+                    @extend .size-30;
+                    @extend .fw-7;
+                }
+                .icon{
+                    background-color: white;
+                    width: 100%;
+                    height: $size-2x*13;
+                    @extend %flex-odd-center;
+                    transition: all ease .5s;
+                    i{
+                        color: $secondary-color;
+                        @extend .size-52
+                    }
+                }
+                &:hover{
+                    border-radius: 0 $radius-8x;
+                }
+                p{
+                    @extend .size-14;
+                    @extend .px-25;
+                    @extend .center;
+                    @extend .mt-10;
+                    color: white;
+                    line-height: $size-5x;     
+                }
+                a{
+                    background-color: $secondary-color;
+                    color: white;
+                    padding: $space-4x $space-8x;
+                    transition: all ease .2s;
+                    @extend .size-14;
+                    @extend .fw-4;
+                    @extend .b-rad-40
+                }
+            }
+        }
+    }
+}
+
+
