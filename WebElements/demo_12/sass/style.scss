@@ -29,7 +29,7 @@
             p{
                 color: $font-color-first;
                 margin-top: $space-2x;
-          }
+            }
         }
         .card{
             height: $card-height;
@@ -43,11 +43,36 @@
                 height: $item-height;
                 box-sizing: border-box;
                 padding: $space-4x $space-4x;
-                @extend %flex-center;  
+                position: relative;
+                @extend %flex-center; 
+                overflow: hidden;
+                .animation{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height:100%;
+                    background-color:$main-color;
+                    transition: all ease .4s;
+                    transform: rotateZ(90deg) translateX(100%);
+                } 
+                &:hover{
+                    h1,p{
+                        color: white;
+                    }
+                    a{
+                        color: $main-color;
+                        background-color: white;
+                    }
+                    .animation{
+                        transform: rotateZ(0deg) translateX(0%);
+                    }
+                }
                 .work{
                     width: 100%;
                     @extend .flex;
                     @extend .justify-content-between;
+                    z-index: 5;
                     .description{
                         width: 220px;
                         h1{
@@ -78,6 +103,7 @@
                     color: white;
                     padding: $space-4x $space-8x;
                     transition: all ease .2s;
+                    z-index: 6;
                     @extend .size-14;
                     @extend .fw-4;
                     @extend .b-rad-40
@@ -86,5 +112,3 @@
         }
     }
 }
-
-
