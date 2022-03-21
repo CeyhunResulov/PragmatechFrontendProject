@@ -1,0 +1,9 @@
+$container-width:100%;
+.container{
+    width: $container-width;
+}
+@for $i from 1 through 12{
+    .col-sm-#{$i}{
+        width: calc(100%/12)*#{$i};
+    }
+}
