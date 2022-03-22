@@ -1,9 +1,65 @@
-$container-width:100%;
-.container{
-    width: $container-width;
+$container-width:1200px;
+img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
 }
-@for $i from 1 through 12{
-    .col-sm-#{$i}{
-        width: calc(100%/12)*#{$i};
+.container{
+    border: 1px solid red;
+    width: $container-width;
+    height: $container-width/1.5;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.row{
+    @extend .flex;
+    @extend .justify-content-between;
+    flex-wrap: wrap;
+}
+.col{
+    width: $container-width/4;
+    height: $container-width/5;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+@media (max-width:576px){
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
     }
 }
+
+@media (min-width:576px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: calc(100%/2);
+    }
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: calc(100%/3);
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: calc(100%/4);
+    }
+}
+
