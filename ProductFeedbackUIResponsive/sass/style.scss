@@ -1,11 +1,13 @@
 @import "sections/variable";
 @import "sections/reset";
 @import "sections/common";
-
+section{
+    width: 100%;
+    height: 1300px;
+}
 .container{
     border: 1px solid red;
     width: $container-width;
-    height: 400px;
     margin: $space-15x auto;
     .row{
         .head-bar{
@@ -60,23 +62,85 @@
     }
 }
 .box{
-    li{
+    // @extend.m-30;
+    @extend .b-rad-5;
+    .title{
+        @extend .flex;
+        @extend .align-items-center;
+        i{
+            @extend .f-size-8;
+            color: $border-color;
+        }
+        span{
         @extend .f-size-16;
+        @extend .ml-16;
         color: $fourth-color;
-        list-style-image: url("/img/circle.png")
+    }
     }
     h5{
         @extend .f-size-18;
+        @extend .mt-8;
+        @extend .mb-8;
         color: $third-color
     }
     p{
         @extend .f-size-16;
+        @extend .mb-8;
         color: $fourth-color;
     }
     a{
         @extend .f-size-13;
         @extend .b-rad-10;
+        @extend .mt-8;
+        @extend .mb-8;
+        display: inline-block;
+        padding: $space-x $space-3x;
         color: $btn-color;
         background-color: $btn-back-color;
     }
+    .btn-bottom{
+        border: 1px solid red;
+        @extend .flex;
+        @extend .justify-content-between;
+        .group{
+            @extend .flex;
+            @extend .align-items-center;
+            padding: $space-3x $space-3x;
+            i{
+                color: $btn-color;
+                @extend .f-size-14;
+                @extend .mr-10;
+                font-weight: $f-weight-700 !important;
+            }
+            span{
+                color: $third-color;
+                @extend .f-size-13;
+                font-weight: $f-weight-700;
+            }
+        }
+        .comment{
+            background: none !important;
+            @extend .flex;
+            @extend .align-items-center;
+            i{
+                color: $btn-back-color;
+                @extend .f-size-18;
+                @extend .mr-10;
+            }
+            span{
+                color: $third-color;
+                @extend .f-size-16;
+                font-weight: $f-weight-700;
+            }
+        }
+    }
+}
+.box-col-1{
+    border-top: 6px solid $border-color;
+}
+.box-col-2{
+    border-top: 6px solid $secondary-color;
+}
+.box-col-3{
+    border-top: 6px solid $border-color-2;
 }

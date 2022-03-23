@@ -18,12 +18,17 @@ body{
     @extend .justify-content-between;
     flex-wrap: wrap;
 }
+.box-size{
+    width: 350px;
+    height: 272px;
+}
 @for $i from 1 through 12{
     .col-#{$i}{
         width: calc((100%/12)*#{$i});
-        padding: 20px;
+        padding: 32px;
         box-sizing: border-box;
         border: 1px solid red;
+        margin: 0 auto;
     }
 }
 // responsive

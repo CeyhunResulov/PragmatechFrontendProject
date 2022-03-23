@@ -10,13 +10,13 @@ body {
   font-family: jost;
 }
 
-.flex, .row, .container .row .head-bar, .container .row .head-bar .hb-left .go-back, .container .row .head-bar .hb-right {
+.flex, .row, .container .row .head-bar, .container .row .head-bar .hb-left .go-back, .container .row .head-bar .hb-right, .box .title, .box .btn-bottom, .box .btn-bottom .group, .box .btn-bottom .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.justify-content-between, .row, .container .row .head-bar {
+.justify-content-between, .row, .container .row .head-bar, .box .btn-bottom {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -28,7 +28,7 @@ body {
           justify-content: center;
 }
 
-.align-items-center, .container .row .head-bar, .container .row .head-bar .hb-left .go-back, .container .row .head-bar .hb-right {
+.align-items-center, .container .row .head-bar, .container .row .head-bar .hb-left .go-back, .container .row .head-bar .hb-right, .box .title, .box .btn-bottom .group, .box .btn-bottom .comment {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -39,100 +39,117 @@ body {
       flex-wrap: wrap;
 }
 
+.box-size {
+  width: 350px;
+  height: 272px;
+}
+
 .col-1 {
   width: calc((100%/12)*1);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-2 {
   width: calc((100%/12)*2);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-3 {
   width: calc((100%/12)*3);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-4 {
   width: calc((100%/12)*4);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-5 {
   width: calc((100%/12)*5);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-6 {
   width: calc((100%/12)*6);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-7 {
   width: calc((100%/12)*7);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-8 {
   width: calc((100%/12)*8);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-9 {
   width: calc((100%/12)*9);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-10 {
   width: calc((100%/12)*10);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-11 {
   width: calc((100%/12)*11);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 .col-12 {
   width: calc((100%/12)*12);
-  padding: 20px;
+  padding: 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid red;
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
@@ -923,7 +940,7 @@ body {
   margin-top: 7px !important;
 }
 
-.mt-8 {
+.mt-8, .box h5, .box a {
   margin-top: 8px !important;
 }
 
@@ -1355,7 +1372,7 @@ body {
   margin-left: 15px !important;
 }
 
-.ml-16 {
+.ml-16, .box .title span {
   margin-left: 16px !important;
 }
 
@@ -1731,7 +1748,7 @@ body {
   margin-right: 9px !important;
 }
 
-.mr-10 {
+.mr-10, .box .btn-bottom .group i, .box .btn-bottom .comment i {
   margin-right: 10px !important;
 }
 
@@ -2123,7 +2140,7 @@ body {
   margin-bottom: 7px !important;
 }
 
-.mb-8 {
+.mb-8, .box h5, .box p, .box a {
   margin-bottom: 8px !important;
 }
 
@@ -4515,7 +4532,7 @@ body {
   border-radius: 4px;
 }
 
-.b-rad-5 {
+.b-rad-5, .box {
   border-radius: 5px;
 }
 
@@ -4927,7 +4944,7 @@ body {
   font-size: 7px;
 }
 
-.f-size-8, .container .row .head-bar .hb-left .go-back a {
+.f-size-8, .container .row .head-bar .hb-left .go-back a, .box .title i {
   font-size: 8px;
 }
 
@@ -4947,11 +4964,11 @@ body {
   font-size: 12px;
 }
 
-.f-size-13, .box a {
+.f-size-13, .box a, .box .btn-bottom .group span {
   font-size: 13px;
 }
 
-.f-size-14, .container .row .head-bar .hb-left .go-back span, .container .row .head-bar .hb-right a {
+.f-size-14, .container .row .head-bar .hb-left .go-back span, .container .row .head-bar .hb-right a, .box .btn-bottom .group i {
   font-size: 14px;
 }
 
@@ -4959,7 +4976,7 @@ body {
   font-size: 15px;
 }
 
-.f-size-16, .box li, .box p {
+.f-size-16, .box .title span, .box p, .box .btn-bottom .comment span {
   font-size: 16px;
 }
 
@@ -4967,7 +4984,7 @@ body {
   font-size: 17px;
 }
 
-.f-size-18, .box h5 {
+.f-size-18, .box h5, .box .btn-bottom .comment i {
   font-size: 18px;
 }
 
@@ -5299,10 +5316,14 @@ body {
   font-size: 100px;
 }
 
+section {
+  width: 100%;
+  height: 1300px;
+}
+
 .container {
   border: 1px solid red;
   width: 1110px;
-  height: 400px;
   margin: 75px auto;
 }
 
@@ -5344,9 +5365,12 @@ body {
   color: white;
 }
 
-.box li {
+.box .title i {
+  color: #f49f85;
+}
+
+.box .title span {
   color: #647196;
-  list-style-image: url("/img/circle.png");
 }
 
 .box h5 {
@@ -5358,6 +5382,51 @@ body {
 }
 
 .box a {
+  display: inline-block;
+  padding: 5px 15px;
   color: #4661e6;
   background-color: #f2f4ff;
+}
+
+.box .btn-bottom {
+  border: 1px solid red;
+}
+
+.box .btn-bottom .group {
+  padding: 15px 15px;
+}
+
+.box .btn-bottom .group i {
+  color: #4661e6;
+  font-weight: 700 !important;
+}
+
+.box .btn-bottom .group span {
+  color: #3a4374;
+  font-weight: 700;
+}
+
+.box .btn-bottom .comment {
+  background: none !important;
+}
+
+.box .btn-bottom .comment i {
+  color: #f2f4ff;
+}
+
+.box .btn-bottom .comment span {
+  color: #3a4374;
+  font-weight: 700;
+}
+
+.box-col-1 {
+  border-top: 6px solid #f49f85;
+}
+
+.box-col-2 {
+  border-top: 6px solid #ad1fea;
+}
+
+.box-col-3 {
+  border-top: 6px solid #62bcfa;
 }
