@@ -1,0 +1,155 @@
+body{
+    font-family: jost;
+}
+.flex{
+    display: flex;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.row{
+    @extend .flex;
+    @extend .justify-content-between;
+    flex-wrap: wrap;
+}
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: calc((100%/12)*#{$i});
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+}
+// responsive
+@media (max-width:576px){
+    .container{
+        width: 100%;
+    }
+    @for $i from 1 through 12{
+    .col-xsm-#{$i}{
+        width: calc((100%/12)*#{$i});
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+}
+}
+
+@media (min-width:576px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    @for $i from 1 through 12{
+    .col-sm-#{$i}{
+        width: calc((100%/12)*#{$i});
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+}
+}
+
+@media (min-width:768px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    @for $i from 1 through 12{
+    .col-md-#{$i}{
+        width: calc((100%/12)*#{$i});
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+}
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+    @for $i from 1 through 12{
+    .col-lg-#{$i}{
+        width: calc((100%/12)*#{$i});
+        padding: 15px;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+}
+}
+
+// margin
+@for $i from 1 through 100{
+    .m-#{$i}{
+        margin: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .mt-#{$i}{
+        margin-top: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .ml-#{$i}{
+        margin-left: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .mr-#{$i}{
+        margin-right: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .mb-#{$i}{
+        margin-bottom: #{$i}px !important;
+    }
+}
+// padding
+@for $i from 1 through 100{
+    .p-#{$i}{
+        padding: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .pt-#{$i}{
+        padding-top: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .pl-#{$i}{
+        padding-left: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .pr-#{$i}{
+        padding-right: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .pb-#{$i}{
+        padding-bottom: #{$i}px !important;
+    }
+}
+.py{
+    padding: 20px 0;
+}
+// border-radius
+@for $i from 1 through 100{
+    .b-rad-#{$i}{
+        border-radius: #{$i}px;
+    }
+}
+// font size
+@for $i from 1 through 100{
+    .f-size-#{$i}{
+        font-size: #{$i}px;
+    }
+}
+
+
+

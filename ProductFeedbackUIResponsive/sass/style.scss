@@ -1,87 +1,82 @@
-$container-width:1200px;
-img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
+@import "sections/variable";
+@import "sections/reset";
+@import "sections/common";
+
 .container{
     border: 1px solid red;
     width: $container-width;
-    margin: 0 auto;
-}
-.flex{
-    display: flex;
-}
-.justify-content-between{
-    justify-content: space-between;
-}
-.row{
-    @extend .flex;
-    @extend .justify-content-between;
-    flex-wrap: wrap;
-}
-@for $i from 1 through 12{
-    .col-#{$i}{
-        width: calc((100%/12)*#{$i});
-        padding: 15px;
-        box-sizing: border-box;
-        border: 1px solid red;
+    height: 400px;
+    margin: $space-15x auto;
+    .row{
+        .head-bar{
+            height: $head-bar-height;
+            background: $main-color;
+            @extend .b-rad-10;
+            @extend .flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;
+            .hb-left{
+                position: relative;
+                @extend .ml-32;
+                .go-back{
+                    @extend .flex;
+                    @extend .align-items-center;
+                    width: 100%;
+                    a{
+                    color: $icon-color;
+                    @extend .f-size-8;
+                    }
+                    span{
+                        @extend .f-size-14;
+                        @extend .ml-25;
+                        text-align: center;
+                        color: white;
+                        display: block
+                    }
+                }
+                h5{
+                    @extend .f-size-24;
+                    font-weight: $f-weight-700;
+                    color: white;
+                }
+            }
+            .hb-right{
+                @extend .flex;
+                @extend .justify-content-center;
+                @extend .align-items-center;
+                @extend .b-rad-10;
+                @extend .mr-40;
+                width: 158px;
+                height: 44px;
+                
+                background: $secondary-color;
+                a{
+                    @extend .f-size-14;
+                    color: white;
+                    
+                }
+            }
+        }
     }
 }
-
-@media (max-width:576px){
-    .container{
-        width: 100%;
+.box{
+    li{
+        @extend .f-size-16;
+        color: $fourth-color;
+        list-style-image: url("/img/circle.png")
     }
-    @for $i from 1 through 12{
-    .col-xsm-#{$i}{
-        width: calc((100%/12)*#{$i});
-        padding: 15px;
-        box-sizing: border-box;
-        border: 1px solid red;
+    h5{
+        @extend .f-size-18;
+        color: $third-color
     }
-}
-}
-
-@media (min-width:576px) and (max-width:768px){
-    .container{
-        width: 100%;
+    p{
+        @extend .f-size-16;
+        color: $fourth-color;
     }
-    @for $i from 1 through 12{
-    .col-sm-#{$i}{
-        width: calc((100%/12)*#{$i});
-        padding: 15px;
-        box-sizing: border-box;
-        border: 1px solid red;
+    a{
+        @extend .f-size-13;
+        @extend .b-rad-10;
+        color: $btn-color;
+        background-color: $btn-back-color;
     }
 }
-}
-
-@media (min-width:768px) and (max-width:992px){
-    .container{
-        width: 100%;
-    }
-    @for $i from 1 through 12{
-    .col-md-#{$i}{
-        width: calc((100%/12)*#{$i});
-        padding: 15px;
-        box-sizing: border-box;
-        border: 1px solid red;
-    }
-}
-}
-
-@media (min-width:992px) and (max-width:1200px){
-    .container{
-        width: 100%;
-    }
-    @for $i from 1 through 12{
-    .col-lg-#{$i}{
-        width: calc((100%/12)*#{$i});
-        padding: 15px;
-        box-sizing: border-box;
-        border: 1px solid red;
-    }
-}
-}
-
