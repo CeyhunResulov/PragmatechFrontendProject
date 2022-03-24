@@ -5,14 +5,18 @@ section{
     width: 100%;
 }
 .container{
-    border: 1px solid red;
     width: $container-width;
     margin: $space-15x auto;
-    .row-1{
+    .row-title{
         @extend .flex;
-        @extend .justify-content-between;
         flex-wrap: wrap;
         width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        .box{
+            background: none;
+            border: 1px solid red;
+        }
         .head-bar{
             height: $head-bar-height;
             background: $main-color;
@@ -101,7 +105,6 @@ section{
         background-color: $btn-back-color;
     }
     .btn-bottom{
-        border: 1px solid red;
         @extend .flex;
         @extend .justify-content-between;
         .group{
@@ -146,17 +149,30 @@ section{
 .box-col-3{
     border-top: 6px solid $border-color-2;
 }
+.row-1{
+    @extend .flex;
+    .box{
+        background: none;
+        margin:15px
+    }
+}
 .row-2{
     @extend .flex;
     @extend .justify-content-between;
-    flex-wrap: wrap;
+    .box{
+        margin: 15px;
+    }
 }
 .row-3{
     @extend .flex;
-    flex-wrap: wrap;
+    width: 1050px;
+    .box{
+        margin: 15px;
+    }
 }
 .row-4{
+    width: 1050px;
     @extend .flex;
     @extend .justify-content-center;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }

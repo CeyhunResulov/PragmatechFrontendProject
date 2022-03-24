@@ -1,5 +1,6 @@
 body{
     font-family: jost;
+    background-color: $section-color;
 }
 .flex{
     display: flex;
@@ -25,13 +26,17 @@ body{
         width: calc((100%/12)*#{$i});
         padding: 32px;
         box-sizing: border-box;
-        border: 1px solid red;
+        background-color: white;
+        // border: 1px solid red;
     }
 }
 // responsive
 @media (max-width:576px){
     .container{
         width: 100% !important;
+    }
+    .row-2 .row-3 .row-4{
+        flex-wrap: wrap;
     }
     @for $i from 1 through 12{
     .col-xsm-#{$i}{
