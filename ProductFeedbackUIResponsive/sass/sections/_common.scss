@@ -13,14 +13,12 @@ body{
 .align-items-center{
     align-items: center;
 }
-.row{
-    @extend .flex;
-    @extend .justify-content-between;
-    flex-wrap: wrap;
-}
 .box-size{
     width: 350px;
     height: 272px;
+}
+.bring-to-center{
+    margin: 0 auto;
 }
 @for $i from 1 through 12{
     .col-#{$i}{
@@ -28,13 +26,12 @@ body{
         padding: 32px;
         box-sizing: border-box;
         border: 1px solid red;
-        margin: 0 auto;
     }
 }
 // responsive
 @media (max-width:576px){
     .container{
-        width: 100%;
+        width: 100% !important;
     }
     @for $i from 1 through 12{
     .col-xsm-#{$i}{
