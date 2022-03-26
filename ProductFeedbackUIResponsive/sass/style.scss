@@ -11,13 +11,12 @@ section{
         @extend .flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 0 15px;
-        box-sizing: border-box;
         .box{
             background: none;
             border: 1px solid red;
         }
         .head-bar{
+            width: 100%;
             height: $head-bar-height;
             background: $main-color;
             @extend .b-rad-10;
@@ -140,6 +139,9 @@ section{
         }
     }
 }
+.box{
+    margin-top: 30px;
+}
 .box-col-1{
     border-top: 6px solid $border-color;
 }
@@ -152,26 +154,21 @@ section{
 .row-1{
     @extend .flex;
     .box{
+        border: 1px solid red;
         background: none;
-        margin:15px
     }
 }
 .row-2{
+    border: 1px solid red;
     @extend .flex;
-    @extend .justify-content-between;
-    .box{
-        margin: 15px;
-    }
+    width: 100%;
 }
 .row-3{
+    border: 1px solid red;
     @extend .flex;
-    width: 1050px;
-    .box{
-        margin: 15px;
-    }
 }
 .row-4{
-    width: 1050px;
+    border: 1px solid red;
     @extend .flex;
     @extend .justify-content-center;
     margin: 0 auto;

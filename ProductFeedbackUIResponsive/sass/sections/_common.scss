@@ -2,6 +2,9 @@ body{
     font-family: jost;
     background-color: $section-color;
 }
+.vs-hidden{
+    visibility: hidden;
+}
 .flex{
     display: flex;
 }
@@ -35,8 +38,19 @@ body{
     .container{
         width: 100% !important;
     }
-    .row-2 .row-3 .row-4{
+    .row-2{
+        width: 100%;
         flex-wrap: wrap;
+    }
+    .row-3{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .empty-box{
+        display: none;
+    }
+    .box{
+        margin: 24px 16px;
     }
     @for $i from 1 through 12{
     .col-xsm-#{$i}{
@@ -114,6 +128,11 @@ body{
 @for $i from 1 through 100{
     .mb-#{$i}{
         margin-bottom: #{$i}px !important;
+    }
+}
+@for $i from 1 through 100{
+    .mx-#{$i}{
+        margin: 0 #{$i}px;
     }
 }
 // padding
