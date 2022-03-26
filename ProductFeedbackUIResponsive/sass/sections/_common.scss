@@ -39,15 +39,15 @@ body{
         width: 100% !important;
     }
     .row-2{
-        width: 100%;
+        width: 100% !important;
         flex-wrap: wrap;
     }
     .row-3{
-        width: 100%;
+        width: 100% !important;
         flex-wrap: wrap;
     }
     .row-4{
-        width: 100%;
+        width: 100% !important;
         flex-wrap: wrap;
     }
     .box{
@@ -57,6 +57,19 @@ body{
         height: 0px !important;
         padding: 0px !important;
         margin: 0px !important;
+    }
+    .row-title{
+        span,a{
+            font-size: 13px !important;
+        }
+        h5{
+            font-size: 18px !important;
+        }
+    }
+    .box{
+        span,a,p,h5{
+            font-size: 13px !important;
+        }
     }
     
     @for $i from 1 through 12{

@@ -149,17 +149,17 @@ body {
     width: 100% !important;
   }
   .row-2 {
-    width: 100%;
+    width: 100% !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .row-3 {
-    width: 100%;
+    width: 100% !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .row-4 {
-    width: 100%;
+    width: 100% !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -170,6 +170,15 @@ body {
     height: 0px !important;
     padding: 0px !important;
     margin: 0px !important;
+  }
+  .row-title span, .row-title a {
+    font-size: 13px !important;
+  }
+  .row-title h5 {
+    font-size: 18px !important;
+  }
+  .box span, .box a, .box p, .box h5 {
+    font-size: 13px !important;
   }
   .col-xsm-1 {
     width: calc((100%/12)*1);
