@@ -173,3 +173,7 @@ section{
     @extend .justify-content-center;
     margin: 0 auto;
 }
+.empty-box{
+    height: 0px !important;
+    padding: 0px;
+}
