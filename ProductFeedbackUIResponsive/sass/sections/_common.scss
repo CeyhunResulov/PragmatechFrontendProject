@@ -85,6 +85,21 @@ body{
 @media (min-width:576px) and (max-width:768px){
     .container{
         width: 100%;
+        .row-1{
+            h5,p{
+                font-size: 14px !important;
+            }
+        }
+        .box{
+            span,h5,a,p{
+                font-size: 13px;
+            }
+            .btn-bottom{
+                .group{
+                    padding: $space-2x $space-3x;
+                }
+            }
+        }
     }
     @for $i from 1 through 12{
     .col-sm-#{$i}{
@@ -123,7 +138,6 @@ body{
     }
 }
 }
-
 // margin
 @for $i from 1 through 100{
     .m-#{$i}{
