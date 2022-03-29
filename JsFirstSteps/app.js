@@ -11,19 +11,32 @@
 // }
 
 
-//2. x adında dəyişən təyin edin. bu dəyişənə istənilən tipdə data təyin edilə bilər.Sizdən tələb olununan daxil
-//  edilən dəyərin növünü tapmaq və ona uyğun ekrana mesaj yazdırmaqdır. (Nümunə: Daxil etdiyini dəyər rəqəmdir)
+// //2. x adında dəyişən təyin edin. bu dəyişənə istənilən tipdə data təyin edilə bilər.Sizdən tələb olununan daxil
+// //  edilən dəyərin növünü tapmaq və ona uyğun ekrana mesaj yazdırmaqdır. (Nümunə: Daxil etdiyini dəyər rəqəmdir)
+// let x
+// x=5
+// if(typeof(x)=="number"){
+//     console.log("daxil edilen deyer reqemdir")
+// }
+// else if(typeof(x)=="string"){
+//     console.log("daxil edilen deyer metndir")
+// }
+// else if(typeof(x)=="boolean"){
+//     console.log("daxil edilen deyer booleandir")
+// }
+// else if(typeof(x)=="undefined"){
+//     console.log("daxil edilen deyer bosdur")
+// }
+
+
+// 3. verilən x ədədinin rəqəmlərini ekrana çap edən proqram yazın
 let x
-x=5
-if(typeof(x)=="number"){
-    console.log("daxil edilen deyer reqemdir")
+let a
+x=8348134
+a=x.toString()
+for(let i=0;i<a.length;i++){
+    b=a[i]
+    console.log(b)
+
 }
-else if(typeof(x)=="string"){
-    console.log("daxil edilen deyer metndir")
-}
-else if(typeof(x)=="boolean"){
-    console.log("daxil edilen deyer booleandir")
-}
-else if(typeof(x)=="undefined"){
-    console.log("daxil edilen deyer bosdur")
-}
+
