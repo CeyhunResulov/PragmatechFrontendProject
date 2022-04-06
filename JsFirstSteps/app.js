@@ -30,13 +30,26 @@
 
 
 // 3. verilən x ədədinin rəqəmlərini ekrana çap edən proqram yazın
-let x
-let a
-x=8348134
-a=x.toString()
-for(let i=0;i<a.length;i++){
-    b=a[i]
-    console.log(b)
+// let x
+// let a
+// x=8348134
+// a=x.toString()
+// for(let i=0;i<a.length;i++){
+//     b=a[i]
+//     console.log(b)
 
-}
+// }
 
+
+
+//4. verilən 4 ədədi böyükdən kiçiyə doğru ekrana çap edən program yazın
+
+
+// let a=12
+// let b=50
+// let c=15
+// let d=21
+// let x
+
+// x=[a,b,c,d]
+// console.log(x.sort(function(a,b){return a-b}).reverse())
