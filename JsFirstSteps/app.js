@@ -53,3 +53,18 @@
 
 // x=[a,b,c,d]
 // console.log(x.sort(function(a,b){return a-b}).reverse())
+
+
+
+
+// verilən kəsirli ədədin (nümumə: 4.234) tam hissəsi ilə kəsirli hissəsini ayrı ayrı ekrana çap edən program yazın
+
+//1ci metod
+// let a=4.2345
+// b=a.toString()
+// c=b.split('.')
+// console.log(c[0])
+// console.log(c[1])
+
+
+
