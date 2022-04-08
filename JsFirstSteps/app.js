@@ -68,3 +68,12 @@
 
 
 
+// 2 ci metod
+
+let a=4.2345
+b=Math.trunc(a)
+console.log(b)
+
+
+
+
