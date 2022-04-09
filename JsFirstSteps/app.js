@@ -57,7 +57,7 @@
 
 
 
-// verilən kəsirli ədədin (nümumə: 4.234) tam hissəsi ilə kəsirli hissəsini ayrı ayrı ekrana çap edən program yazın
+//5. verilən kəsirli ədədin (nümumə: 4.234) tam hissəsi ilə kəsirli hissəsini ayrı ayrı ekrana çap edən program yazın
 
 //1ci metod
 // let a=4.2345
@@ -70,9 +70,20 @@
 
 // 2 ci metod
 
-let a=4.2345
-b=Math.trunc(a)
-console.log(b)
+// let a=4.2345
+// b=Math.trunc(a)
+// console.log(b)
+
+// 6. x = 10, y = 55 “and”-dən istifadə edərək x və y müqayisə edərək boolen dəyərləri çapa verin.
+
+let x=10
+let y=55
+if(x>10 && y<60){
+    console.log(true)
+}else{
+    console.log(false)
+}
+
 
 
 
