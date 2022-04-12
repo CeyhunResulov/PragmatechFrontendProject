@@ -76,14 +76,34 @@
 
 // 6. x = 10, y = 55 “and”-dən istifadə edərək x və y müqayisə edərək boolen dəyərləri çapa verin.
 
-let x=10
-let y=55
-if(x>10 && y<60){
-    console.log(true)
-}else{
-    console.log(false)
-}
+// let x=10
+// let y=55
+// if(x>10 && y<60){
+//     console.log(true)
+// }else{
+//     console.log(false)
+// }
 
+
+// 7.3 nöqtənin koordinatları verilir.Bu verilən koordinatlara görə a nöqtəsinə ən yaxın nöqtəni tapan proqram yazın
+// a_x=120,a_y=200
+// b_x=230,b_y=400
+// c_x=210,c_y=345
+
+
+
+
+let a_x=120;
+let a_y=200;
+let b_x=230;
+let b_y=400;
+let c_x=610;
+let c_y=445;
+if(b_x-a_x>c_x-a_x && b_y-a_y>c_y-a_y){
+    console.log("koordinatlara gore a noqtesine en yaxin olan c noqtesidir")
+}else{
+    console.log("koordinatlara gore a noqtesine en yaxin olan b noqtesidir")
+}
 
 
 
